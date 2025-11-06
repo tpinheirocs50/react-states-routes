@@ -15,8 +15,8 @@ export default function Course() {
 
     return (
         <>
-            // here we use the spread operator, so that the object inside the variable current delivers all properties at once.
-            // another way is to pass individually, like current.subject, current.description, etc, to the correct parameters inside SubjectCard component
+            {/* here we use the spread operator, so that the object inside the variable current delivers all properties at once.
+            another way is to pass individually, like current.subject, current.description, etc, to the correct parameters inside SubjectCard component */}
             <SubjectCard {...current} />
             <Link to="/courselist">Back to courses list</Link>
         </>

@@ -8,8 +8,10 @@ export default function RootLayout() {
     return (
         <>
             <h1>Header</h1>
-            <Navigation />  // this is a component we created
-            <Outlet />      // this is the react component that transforms into our child content
+            {/* this is a component we created */}
+            <Navigation />
+            {/* this is the react component that transforms into our child content */}
+            <Outlet />
             <h1>Footer</h1>
         </>
     );

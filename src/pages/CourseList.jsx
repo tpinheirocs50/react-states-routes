@@ -6,8 +6,8 @@ export default function CourseList() {
         <>
             <h1>This is the CourseList page!</h1>
             <h2>Choose a subject:</h2>
-            // here we iterate over all elements inside the "subjects" array, and map them to a Link component
-            // we must also pass a key property, which must be a unique value! preferably inside each item
+            {/* here we iterate over all elements inside the "subjects" array, and map them to a Link component
+            we must also pass a key property, which must be a unique value! preferably inside each item */}
             {subjects.map((el) => <Link className="course-link" key={el.subject} to={"/course/" + el.subject}>{el.subject}</Link>)}
         </>
     );
